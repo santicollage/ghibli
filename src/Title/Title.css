@@ -1,0 +1,67 @@
+.title-container {
+  position: absolute;
+  min-width: 60vw;
+  max-width: 80vw;
+  top: 5vh;
+  right: 10vw;
+  text-align: right;
+  filter: drop-shadow(8px 8px 7px rgba(0, 0, 0, 0.3));
+}
+.title-container h1 {
+  color: #FFEFDD;
+  font-size: 4.3rem;
+  line-height: 4.2rem;
+  margin: 0;
+}
+.title-container h2 {
+  color: #88716D;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  margin: 0;
+  margin-top: 5.2rem;
+}
+
+.span-container {
+  position: relative;
+  text-align: right;
+}
+
+.word {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.visible {
+  animation: visible 2s ease 0s forwards;
+}
+
+.invisible {
+  animation: invisible 2s ease 0s forwards;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes invisible {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}

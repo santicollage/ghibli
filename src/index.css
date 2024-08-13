@@ -5,7 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background: rgb(122,148,243);
+  background: linear-gradient(148deg, rgba(122,148,243,1) 22%, rgba(170,185,238,1) 80%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
+  font-family: "Caveat Brush", cursive;
 }
 
 h1 {
