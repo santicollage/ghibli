@@ -15,7 +15,14 @@ function App() {
 
       <Main
         onTitle={() => <Title/>}
-        onButton={() => <Button/>}
+        onButton={(width, height, icon, top, left) => 
+          <Button 
+            width={width} 
+            height={height}
+            icon={icon}
+            top={top}
+            left={left}
+          />}
         onMessage={() => <Message/>}
         onGallery={() => <Gallery/>}
       />
