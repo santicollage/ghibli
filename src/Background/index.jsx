@@ -1,8 +1,8 @@
 import React from 'react';
 import './Background.css';
-import Image from '../assets/images/Fondo-1.png';
+import images from '../assets/images';
 
-function Background() {
+function Background({page}) {  
 
   return (
     <>
@@ -17,7 +17,7 @@ function Background() {
         <div className='cloud cloud-7' alt="cloud" />
       </div>
 
-      <img className='image-footer' src={Image}/>
+      <img className='image-footer' src={images[`Fondo${page}`]}/>
     </>
   );
 }

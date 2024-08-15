@@ -1,0 +1,42 @@
+.gallery-container {
+  position: relative;
+  width: 80%;
+  height: 90%;
+}
+.gallery-container .photo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: #FFEFDD 12px solid;
+  transform-origin: 50% 50%;
+}
+.photo-1 {
+  top: 0%;
+  left: 4%;
+  transform: rotate(-12deg);
+}
+.photo-2 {
+  top: 26%;
+  right: 4%;
+  transform: rotate(7deg);
+}
+.photo-3 {
+  top: 57%;
+  left: 4%;
+  transform: rotate(-10deg);
+}
+.gallery-container button {
+  position: absolute;
+  top: -29px;
+  right: -16px;
+  background: none;
+  color: #842717;
+  font-size: 4rem;
+  cursor: pointer;
+  padding: 0 10px;
+}
+.gallery-container button:focus {
+  outline: none;
+}

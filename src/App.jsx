@@ -8,23 +8,34 @@ import {Gallery} from './Gallery';
 import './App.css'
 
 function App() {
+  const[page, setPage] = useState(1);
+  const[message, setMessage] = useState(false);
+  const[photo, setPhoto] = useState(false);
 
   return (
     <>
-      <Background/>
+      <Background page={page}/>
 
       <Main
+        page={page}
+        message={message}
+        photo={photo}
         onTitle={() => <Title/>}
-        onButton={(width, height, icon, top, left) => 
+        onButton={(id, width, height, icon, top, left) => 
           <Button 
+            id={id}
+            page={page}
+            setPage={setPage}
+            setMessage={setMessage}
+            setPhoto={setPhoto}
             width={width} 
             height={height}
             icon={icon}
             top={top}
             left={left}
           />}
-        onMessage={() => <Message/>}
-        onGallery={() => <Gallery/>}
+        onMessage={() => <Message setMessage={setMessage}/>}
+        onGallery={() => <Gallery setPhoto={setPhoto}/>}
       />
     </>
   )
