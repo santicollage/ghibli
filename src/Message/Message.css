@@ -1,7 +1,7 @@
 .message-container {
   position: relative;
   width: 80%;
-  
+  animation: visible 0.5s ease-in-out forwards;
 }
 .message-background {
   position: absolute;
@@ -15,6 +15,7 @@
 .message-container p {
   padding: 10px 20px;
   color: #72514c;
+  font-size: 1.4rem;
 }
 .message-container button {
   position: absolute;
@@ -28,4 +29,13 @@
 }
 .message-container button:focus {
   outline: none;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

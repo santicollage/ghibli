@@ -2,6 +2,7 @@
   position: relative;
   width: 80%;
   height: 90%;
+  animation: visible 0.5s ease-in-out forwards;
 }
 .gallery-container .photo {
   position: absolute;
@@ -39,4 +40,13 @@
 }
 .gallery-container button:focus {
   outline: none;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -12,9 +12,9 @@ function Gallery(props) {
     <>
       <div className='gallery-container'>
         <button onClick={onUpdate}>X</button>
-        <img className='photo photo-1' src={images.Photo1} alt="Photo" />
-        <img className='photo photo-2' src={images.Photo2} alt="Photo" />
-        <img className='photo photo-3' src={images.Photo3} alt="Photo" />
+        <img className='photo photo-1' src={images[`Photo${((props.page - 2) * 3) + 1}`]} alt="Photo" />
+        <img className='photo photo-2' src={images[`Photo${((props.page - 2) * 3) + 2}`]} alt="Photo" />
+        <img className='photo photo-3' src={images[`Photo${((props.page - 2) * 3) + 3}`]} alt="Photo" />
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import {Message} from './Message';
 import {Gallery} from './Gallery';
 import './App.css'
 
+
 function App() {
   const[page, setPage] = useState(1);
   const[message, setMessage] = useState(false);
@@ -34,8 +35,8 @@ function App() {
             top={top}
             left={left}
           />}
-        onMessage={() => <Message setMessage={setMessage}/>}
-        onGallery={() => <Gallery setPhoto={setPhoto}/>}
+        onMessage={() => <Message page={page} setMessage={setMessage}/>}
+        onGallery={() => <Gallery page={page} setPhoto={setPhoto}/>}
       />
     </>
   )

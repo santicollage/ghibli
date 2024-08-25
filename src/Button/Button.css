@@ -1,6 +1,6 @@
 .icon-container {
   position: absolute;
-  animation: waves 2s linear infinite reverse, visible 1s ease-in-out forwards;
+  animation: waves 2s linear infinite reverse, visible 0.5s ease-in-out forwards;
   background-color: #FFEFDD;
   filter: drop-shadow(0px 0px 8px #88716D);
   padding: 0;
